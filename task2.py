@@ -14,6 +14,9 @@ for i in range(0,N):
     a = randint(0,5)
     s[i] = a
 print(s)
+b = 0
 for j in range(0,N-1):
     if s[j] == s[j+1]:
         print(f'значение:{s[j]} индексы {j} и {j+1}')
+        b = 1
+if b ==0: print("Нет")
