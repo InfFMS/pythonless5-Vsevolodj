@@ -7,3 +7,18 @@
 # [1, 2, 3, 2, 5, 10]
 # Вывод:
 # значение:2 индексы 1 и 3
+from random import randint
+N = int(input())
+s = [0]*N
+for i in range(0,N):
+    a = randint(0,100)
+    s[i] = a
+print(s)
+b =0
+a = []
+for i in range(0,N):
+    for j in range(i+1,N):
+        if s[i] == s[j]:
+            print(f'значение:{s[j]} индексы {i} и {j}')
+            b = 1
+if b ==0: print("Нет")
