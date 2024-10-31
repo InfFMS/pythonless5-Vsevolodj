@@ -7,3 +7,13 @@
 # Вывод:
 # значение:3 индексы 2 и 3
 # значение:2 индексы 4 и 5
+from random import randint
+N = int(input())
+s = [0]*N
+for i in range(0,N):
+    a = randint(0,5)
+    s[i] = a
+print(s)
+for j in range(0,N-1):
+    if s[j] == s[j+1]:
+        print(f'значение:{s[j]} индексы {j} и {j+1}')
